@@ -112,6 +112,9 @@ function hipstyle_common_custom_css(){
 				color: {$menuColor}!important;
 				}
 			}
+			.menu_fixed:after {
+				background: {$headerBg}
+			}
 			.main_menu .main-menu-item ul li a:hover, .single_page_menu.menu_fixed .main-menu-item ul li .nav-link:hover
 			{
 			   color: {$menuHoverColor}!important;
