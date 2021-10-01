@@ -33,7 +33,7 @@
             </a>
             <?php
             $post_exc_limit = !empty( hipstyle_opt( 'hipstyle_excerpt_length' ) ) ? hipstyle_opt( 'hipstyle_excerpt_length' ) : 28;
-            echo wpautop( wp_trim_words( get_the_content(), $post_exc_limit, '' ) );
+            echo wpautop( wp_trim_words( get_the_content(), $post_exc_limit, '...' ) );
 
             if( hipstyle_opt( 'hipstyle_blog_meta' ) == 1 ) {
 	            ?>
