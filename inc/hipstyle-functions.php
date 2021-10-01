@@ -233,7 +233,7 @@ function hipstyle_page_titlebar() {
 					echo esc_html__( 'Blog', 'hipstyle' );
 
 				} elseif ( is_404() ) {
-					echo esc_html__( '404 error', 'hipstyle' );
+					echo esc_html__( '404 ERROR', 'hipstyle' );
 
 				}
 				?>
