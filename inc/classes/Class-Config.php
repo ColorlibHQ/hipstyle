@@ -234,58 +234,23 @@
 					array(
 						'handler'		=> 'hipstyle_theme-bootstrap',
 						'file' 			=> $jsPath.'bootstrap.min.js',
-						'dependency' 	=> array( 'jquery' ),
+						'dependency' 	=> array(),
 						'version' 		=> '5.3.8-4',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'hipstyle_theme-magnific-popup-js',
-						'file' 			=> $jsPath.'jquery.magnific-popup.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'hipstyle_theme-swiper-min-js',
-						'file' 			=> $jsPath.'swiper.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'hipstyle_theme-owl-carousel-js',
-						'file' 			=> $jsPath.'owl.carousel.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'hipstyle_theme-slick-min-js',
-						'file' 			=> $jsPath.'slick.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'hipstyle_theme-jquery-ajaxchimp-min-js',
-						'file' 			=> $jsPath.'jquery.ajaxchimp.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					
 					array(
 						'handler'		=> 'hipstyle-ui-js',
-						'file' 			=> $jsPath.'colorlib-ui.js',
+						'file' 			=> $jsPath . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'colorlib-ui.js' : 'colorlib-ui.min.js' ),
 						'dependency' 	=> array(),
-						'version' 		=> '2.1.1',
+						'version' 		=> '3.0.0',
 						'in_footer' 	=> true
 					),
 					array(
 						'handler'		=> 'hipstyle_theme-hipstyle-custom',
 						'file' 			=> $jsPath.'custom.js',
-						'dependency' 	=> array( 'jquery', 'hipstyle-ui-js' ),
-						'version' 		=> $this->hipstyle_version . '-s1',
+						'dependency' 	=> array( 'hipstyle-ui-js' ),
+						'version' 		=> $this->hipstyle_version . '-s2',
 						'in_footer' 	=> true
 					),
 
