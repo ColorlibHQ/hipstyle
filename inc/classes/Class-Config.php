@@ -200,12 +200,6 @@
 						'version' 		=> '1.0',
 					),
 					array(
-						'handler'		=> 'hipstyle_theme-gijgo-min-css',
-						'file' 			=> $cssPath.'gijgo.min.css',
-						'dependency' 	=> array(),
-						'version' 		=> '1.0',
-					),
-					array(
 						'handler'		=> 'hipstyle_theme-nice-select-css',
 						'file' 			=> $cssPath.'nice-select.css',
 						'dependency' 	=> array(),
@@ -215,13 +209,13 @@
 						'handler'		=> 'hipstyle_theme-default-css',
 						'file' 			=> $cssPath.'default.css',
 						'dependency' 	=> array(),
-						'version' 		=> '1.0-s3',
+						'version' 		=> '1.0',
 					),
 					array(
 						'handler'		=> 'hipstyle_theme-style-css',
 						'file' 			=> $cssPath.'style.css',
 						'dependency' 	=> array(),
-						'version' 		=> '1.0',
+						'version' 		=> '1.0-s3',
 					),
 					
 					array(
@@ -250,7 +244,7 @@
 						'handler'		=> 'hipstyle_theme-hipstyle-custom',
 						'file' 			=> $jsPath.'custom.js',
 						'dependency' 	=> array( 'hipstyle-ui-js' ),
-						'version' 		=> $this->hipstyle_version . '-s2',
+						'version' 		=> $this->hipstyle_version . '-s3',
 						'in_footer' 	=> true
 					),
 
