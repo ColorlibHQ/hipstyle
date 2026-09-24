@@ -232,13 +232,6 @@
 				
 				'scripts' => array(
 					array(
-						'handler'		=> 'hipstyle_theme-popper',
-						'file' 			=> $jsPath.'popper.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '4.0',
-						'in_footer' 	=> true
-					),
-					array(
 						'handler'		=> 'hipstyle_theme-bootstrap',
 						'file' 			=> $jsPath.'bootstrap.min.js',
 						'dependency' 	=> array( 'jquery' ),
@@ -260,13 +253,6 @@
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'hipstyle_theme-instagram-feed-js',
-						'file' 			=> $jsPath.'jquery.instagramFeed.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
 						'handler'		=> 'hipstyle_theme-owl-carousel-js',
 						'file' 			=> $jsPath.'owl.carousel.min.js',
 						'dependency' 	=> array( 'jquery' ),
@@ -281,13 +267,6 @@
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'hipstyle_theme-jquery-nice-select-js',
-						'file' 			=> $jsPath.'jquery.nice-select.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
 						'handler'		=> 'hipstyle_theme-jquery-ajaxchimp-min-js',
 						'file' 			=> $jsPath.'jquery.ajaxchimp.min.js',
 						'dependency' 	=> array( 'jquery' ),
@@ -296,10 +275,17 @@
 					),
 					
 					array(
+						'handler'		=> 'hipstyle-ui-js',
+						'file' 			=> $jsPath.'colorlib-ui.js',
+						'dependency' 	=> array(),
+						'version' 		=> '2.1.1',
+						'in_footer' 	=> true
+					),
+					array(
 						'handler'		=> 'hipstyle_theme-hipstyle-custom',
 						'file' 			=> $jsPath.'custom.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> $this->hipstyle_version,
+						'dependency' 	=> array( 'jquery', 'hipstyle-ui-js' ),
+						'version' 		=> $this->hipstyle_version . '-s1',
 						'in_footer' 	=> true
 					),
 
